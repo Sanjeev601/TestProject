@@ -1,4 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  InstanceType:
+    Description: EC2 Instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.small
+      - m4.large
 
 Resources:
   EC2Instance:
